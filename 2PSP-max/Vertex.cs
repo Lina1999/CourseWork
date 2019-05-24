@@ -1,24 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace _2PSP_max
 {
     public class Vertex
     {
-        private int weight;
-        public int Weight
-        {
-            get
-            {
-                return this.weight;
-            }
-        }
+        public int Number { get; set; }
+        public int Weight { get; set; }
+
+        //set of nodes visited in current path 
+        public HashSet<int> Visiteds { get; set; }
 
         private List<Vertex> neighbors;
-        
+
         public IList<Vertex> Neighbors
         {
             get
@@ -27,10 +22,16 @@ namespace _2PSP_max
             }
         }
 
-        public Vertex(int weight)
+        public Vertex(int number, int weight)
         {
-            this.weight = weight;
+            Weight = weight;
+            Number = number;
             neighbors = new List<Vertex>();
+        }
+
+        public Vertex(int number, int weight, HashSet<int> visiteds): this(number, weight)
+        {
+            Visiteds = visiteds;
         }
 
         public bool TryAddNeighbor(Vertex neighbor)
@@ -57,15 +58,21 @@ namespace _2PSP_max
             return true;
         }
 
+        public int DistanceTo(Vertex v)
+        {
+            return Math.Abs(this.Weight - v.Weight);
+        }
+
         public override string ToString()
         {
             var s = new StringBuilder();
-            s.Append("Vertex Weight: " + weight + ", Neighbors: ");
+            s.Append("Vertex Weight: " + Weight + ", Neighbors: ");
             foreach (var vertex in neighbors)
             {
                 s.Append(vertex.Weight + " ");
             }
             return s.ToString();
         }
+        
     }
 }

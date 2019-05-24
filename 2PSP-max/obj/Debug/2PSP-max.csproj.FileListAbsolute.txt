@@ -1,0 +1,7 @@
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\bin\Debug\2PSP-max.exe.config
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\bin\Debug\2PSP-max.exe
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\bin\Debug\2PSP-max.pdb
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\obj\Debug\2PSP-max.csprojAssemblyReference.cache
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\obj\Debug\2PSP-max.csproj.CoreCompileInputs.cache
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\obj\Debug\2PSP-max.exe
+C:\Users\evelina.ghazaryan\source\repos\2PSP-max\2PSP-max\obj\Debug\2PSP-max.pdb
